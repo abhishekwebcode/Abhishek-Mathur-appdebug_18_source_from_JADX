@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:title="Class Attendance" android:titleTextColor="@color/black" style="@style/MyToolbarStyle" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:background="@color/screenbackground" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/submitlay"
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201">
+                <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mark Class Attendance" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/laybackground" android:layout_width="match_parent" android:layout_height="wrap_content"
+                <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x8201" android:layout_weight="1.0"
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18dp" android:textColor="@color/sepretorcolor" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Class" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201">
+                        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Class4A" />
+                        <ImageView android:padding="5dp" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_marginLeft="5dp" android:src="@drawable/editicon" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="15dp" android:textColor="@color/colorAccent" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Edit Roll No/Name  >" android:textAllCaps="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/sepretorcolor" android:layout_width="UNKNOWN_DATA_0x101" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" />
+                <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x8201" android:layout_weight="1.1"
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18dp" android:textColor="@color/sepretorcolor" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Date" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201">
+                        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="07 Jan 2018" />
+                        <ImageView android:padding="5dp" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_marginLeft="5dp" android:src="@drawable/calendaricon" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="15dp" android:textColor="@color/colorAccent" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Show History  >" android:textAllCaps="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp"
+                <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:background="@color/sepretorcolor" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801">
+                    <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Roll No" android:layout_weight="1.0" android:textAllCaps="true" />
+                    <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Name" android:layout_weight="1.0" android:textAllCaps="true" />
+                    <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent" android:text="P/A" android:layout_weight="1.0" android:textAllCaps="true" />
+                    <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Comment" android:layout_weight="1.0" android:textAllCaps="true" />
+                </LinearLayout>
+                <ListView android:id="@+id/studentlist" android:background="@drawable/laybackground" android:padding="2dp" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/sepretorcolor" android:dividerHeight="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/submitlay" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x5001" android:layout_alignParentBottom="true">
+            <TextView android:textSize="20dp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="@color/colorAccent" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Submit Attendance" android:textAllCaps="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

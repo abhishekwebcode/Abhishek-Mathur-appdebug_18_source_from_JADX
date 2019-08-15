@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3c01">
+        <TextView android:textColor="@color/black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/rollnotxt" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Roll No" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/nametxt" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Name" android:layout_weight="1.0" />
+        <ImageView android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:src="@drawable/listnameicon" />
+        <ImageView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/paimg" android:padding="13dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/present" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/black" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/commenttxt" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Comment" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>
